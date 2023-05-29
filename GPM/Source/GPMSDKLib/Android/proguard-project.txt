@@ -1,0 +1,35 @@
+# vendor sdk
+-dontwarn com.samsung.android.game.**
+-keep class com.samsung.android.game.** { *; }
+
+-dontwarn com.vivo.vivogamesdk.**
+-keep class com.vivo.vivogamesdk.** { *; }
+
+-dontwarn com.huawei.game.gamekit.**
+-keep class com.huawei.game.gamekit.** { *; }
+-dontwarn android.rms.iaware.**
+-keep class android.rms.iaware.** { *; }
+-dontwarn com.huawei.devices.**
+-keep class com.huawei.devices.** { *; }
+-dontwarn com.huawei.android.os.**
+-keep class com.huawei.android.os.** { *; }
+
+-dontwarn com.oppo.oiface.**
+-keep class com.oppo.oiface.** { *; }
+-dontwarn com.oplus.cosa.**
+-keep class com.oplus.cosa.** { *; }
+
+-dontwarn com.xiaomi.boostersdk.**
+-keep class com.xiaomi.boostersdk.** { *; }
+
+# transceivertool
+-keep class com.enq.transceiver.** { *;}
+-keep class com.ihoc.tgpatask.** { *;}
+
+# tgpa sdk
+-keep class com.ihoc.mgpa.** { *; }
+-keep class com.ihoc.tgpa.** { *;}
+
+# toolkit
+-dontwarn com.ihoc.mgpa.toolkit.**
+-keep class com.ihoc.mgpa.toolkit.util.** { *;}

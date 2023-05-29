@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* Alamat email ini sudah terdaftar, harap gunakan yang lainnya.</string>
+    <string name="msdk_bind_and">%1$s dan %2$s</string>
+    <string name="msdk_bind_button_confirm">KONFIRMASI</string>
+    <string name="msdk_bind_button_next">SELANJUTNYA</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* Harap masukkan kode verifikasi yang valid.</string>
+    <string name="msdk_bind_enter_verification_code">Masukkan kode verifikasi</string>
+    <string name="msdk_bind_enter_your_email">Masukkan email Anda</string>
+    <string name="msdk_bind_not_get_verification_code">Belum menerima kode?</string>
+    <string name="msdk_bind_please_enter_valid_email">* Harap masukkan alamat email yang valid.</string>
+    <string name="msdk_bind_privacy_policy">Kebijakan Privasi</string>
+    <string name="msdk_bind_receive_email_notice">Terima berita dan update terbaru</string>
+    <string name="msdk_bind_resend">Kirim Ulang</string>
+    <string name="msdk_bind_terms_of_service">Ketentuan Layanan</string>
+    <string name="msdk_bind_verification_sent_notification">Kode verifikasi sudah dikirim ke email Anda %1$s</string>
+    <string name="msdk_bind_you_are_all_set">Berhasil!</string>
+</resources>

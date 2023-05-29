@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.GCloud.cpp.obj": [
+			"GCloudAppDelegate.cpp.obj",
+			"GCloudSDKModule.cpp.obj"
+		]
+	}
+}

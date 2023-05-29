@@ -1,0 +1,5 @@
+/GCloud/Source/GCloudLib/Win/X86/GCloud.pdb filter=lfs diff=lfs merge=lfs -text
+/GCloud/Source/GCloudLib/Win/X86_64/GCloud.pdb filter=lfs diff=lfs merge=lfs -text
+/GCloud/Source/GCloudLib/X64/GCloud_static.lib filter=lfs diff=lfs merge=lfs -text
+/MSDKCore/Binaries/Win64/libcef_msdk.dll filter=lfs diff=lfs merge=lfs -text
+/MSDKCore/Source/MSDKCore/lib/Win64/libcef_msdk.dll filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="twitter_domain_for_clear_cookies">
+        <item>https://.twitter.com</item>
+        <item>https://.api.twitter.com</item>
+    </string-array>
+    <color name="transparent">#0000</color>
+    <color name="twitter_bg_action_bar">#fff</color>
+    <color name="twitter_bg_gray">#444444</color>
+    <color name="twitter_bg_green">#393</color>
+    <color name="twitter_bg_line">#222222</color>
+    <color name="twitter_text_color_gray">#666666</color>
+    <color name="twitter_text_color_title">#BBBBBB</color>
+    <dimen name="twitter_height_line">1dp</dimen>
+    <dimen name="twitter_height_progress">2dp</dimen>
+    <dimen name="twitter_height_title">48dp</dimen>
+    <dimen name="twitter_height_zero">0dp</dimen>
+    <dimen name="twitter_padding_small">10dp</dimen>
+    <dimen name="twitter_text_size_large">16sp</dimen>
+    <dimen name="twitter_text_size_normal">14sp</dimen>
+    <string name="app_name">twitter</string>
+    <string name="twitter_action_back">Back</string>
+    <string name="twitter_action_close">Close</string>
+    <string name="twitter_action_title">TwitterWeb Login</string>
+    <style name="TwitterTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="twitter_action_button">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/twitter_text_size_normal</item>
+        <item name="android:textColor">@color/twitter_text_color_gray</item>
+        <item name="android:minHeight">@dimen/twitter_height_zero</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="twitter_action_container">
+        <item name="android:background">@color/twitter_bg_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/twitter_height_title</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/twitter_padding_small</item>
+        <item name="android:paddingRight">@dimen/twitter_padding_small</item>
+    </style>
+    <style name="twitter_action_title">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/twitter_text_size_large</item>
+        <item name="android:textColor">@color/twitter_text_color_title</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="twitter_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/twitter_bg_action_bar</item>
+    </style>
+    <style name="twitter_line">
+        <item name="android:layout_height">@dimen/twitter_height_line</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/twitter_bg_line</item>
+    </style>
+    <style name="twitter_progress_bar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_height">@dimen/twitter_height_progress</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/twitter_bg_gray</item>
+    </style>
+</resources>

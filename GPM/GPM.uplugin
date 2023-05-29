@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "GPM",
+	"Description": " Game Performance Management Toolkit",
+	"Category": "GPM",
+	"CreatedBy": "vincentwgao",
+	"CreatedByURL": "perfsight",
+	"DocsURL": "perfsight",
+	"MarketplaceURL": "perfsight",
+	"SupportURL": "perfsight",
+	"EnabledByDefault": true,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "GPM",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"BlacklistPlatforms":
+            [
+                "Linux"
+            ]
+		}
+	]
+}
+

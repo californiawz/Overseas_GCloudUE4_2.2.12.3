@@ -1,0 +1,10 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.CrashSight.cpp.obj": [
+			"CrashSightBridgeWin.cpp.obj",
+			"CrashSightModule.cpp.obj",
+			"EmptyImplementations.cpp.obj"
+		]
+	}
+}

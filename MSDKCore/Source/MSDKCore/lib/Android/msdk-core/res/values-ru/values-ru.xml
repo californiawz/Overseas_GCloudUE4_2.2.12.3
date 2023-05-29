@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* Этот адрес уже был зарегистрирован. Используйте другой.</string>
+    <string name="msdk_bind_and">%1$s и %2$s。</string>
+    <string name="msdk_bind_button_confirm">ПОДТВЕРДИТЬ</string>
+    <string name="msdk_bind_button_next">ДАЛЕЕ</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* Введите верный код проверки.</string>
+    <string name="msdk_bind_enter_verification_code">Введите код проверки</string>
+    <string name="msdk_bind_enter_your_email">Введите свой email-адрес</string>
+    <string name="msdk_bind_not_get_verification_code">Не получили код?</string>
+    <string name="msdk_bind_please_enter_valid_email">* Введите верный email-адрес.</string>
+    <string name="msdk_bind_privacy_policy">Политика конфиденциальности</string>
+    <string name="msdk_bind_receive_email_notice">Получать новости и обновления</string>
+    <string name="msdk_bind_resend">Отправить еще</string>
+    <string name="msdk_bind_terms_of_service">Условия обслуживания</string>
+    <string name="msdk_bind_verification_sent_notification">Код проверки был отправлен на %1$s</string>
+    <string name="msdk_bind_you_are_all_set">Все готово!</string>
+</resources>

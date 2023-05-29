@@ -1,0 +1,103 @@
+请在游戏工程的Source/XXXX/XXXX.Build.cs中添加代码，将相应插件引入工程 : 
+
+PrivateDependencyModuleNames.AddRange(new string[] { "CrashSight" });
+PrivateDependencyModuleNames.AddRange(new string[] { "GCloudCore" });
+PrivateDependencyModuleNames.AddRange(new string[] { "GCloud" });
+PrivateDependencyModuleNames.AddRange(new string[] { "GPM" });
+PrivateDependencyModuleNames.AddRange(new string[] { "GVoice" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKApple" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKCore" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKFacebook" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKGameCenter" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKGoogle" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKLBS" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKSystem" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKTDM" });
+PrivateDependencyModuleNames.AddRange(new string[] { "MSDKTwitter" });
+PrivateDependencyModuleNames.AddRange(new string[] { "TDM" });
+PrivateDependencyModuleNames.AddRange(new string[] { "TssSDK" });
+
+
+
+请在UE4工程->设置->项目设置->平台->iOS, 在Additional Plist Data中添加以下文本作为info.plist信息(如果直接在Config/DefaultEngine.ini文件中配置，请去掉以下文本中的换行符) : 
+
+<key>GCloudCore</key>
+<dict>
+  <key>RemoteConfigUrl</key>
+  <string>https://cloudctrl.gcloudsdk.com</string>
+  <key>GTraceUrl</key>
+  <string>https://cloudctrl.gcloudsdk.com/gtrace/get_traceid_list</string>
+</dict>
+<key>FacebookClientToken</key>
+<string>b5425a602c28bfd477fa7e3cd832fb2e</string>
+<key>TDM</key>
+<dict>
+  <key>LogLevel</key>
+  <string>1</string>
+  <key>Test</key>
+  <false/>
+  <key>AppChannel</key>
+  <string>AppStore</string>
+  <key>AppId</key>
+  <string>745065090</string>
+</dict>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>CurrentNeedLocation</string>
+<key>GCloud</key>
+<dict>
+  <key>GameId</key>
+  <string>745065090</string>
+  <key>GameKey</key>
+  <string>bc66f98c11c67ffda74e9cbb4dee5459</string>
+</dict>
+<key>NSMicrophoneUsageDescription</key>
+<string>Apply Microphone Permission</string>
+<key>CFBundleURLTypes</key>
+<array>
+  <dict>
+    <key>CFBundleURLName</key>
+    <string>twitter</string>
+    <key>CFBundleTypeRole</key>
+    <string>Editor</string>
+    <key>CFBundleURLSchemes</key>
+    <array>
+      <string>twitterkit-{TWITTER_KEY_IOS}</string>
+    </array>
+  </dict>
+  <dict>
+    <key>CFBundleURLName</key>
+    <string>Google</string>
+    <key>CFBundleTypeRole</key>
+    <string>Editor</string>
+    <key>CFBundleURLSchemes</key>
+    <array>
+      <string>com.googleusercontent.apps.851769810464-qheckoc610pa5edi4b64estvcmv3d1lj</string>
+    </array>
+  </dict>
+  <dict>
+    <key>CFBundleURLName</key>
+    <string>Facebook</string>
+    <key>CFBundleTypeRole</key>
+    <string>Editor</string>
+    <key>CFBundleURLSchemes</key>
+    <array>
+      <string>fb624009219651454</string>
+    </array>
+  </dict>
+</array>
+<key>NSAppTransportSecurity</key>
+<dict>
+  <key>NSAllowsArbitraryLoads</key>
+  <true/>
+</dict>
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <string>twitter</string>
+  <string>twitterauth</string>
+  <string>fb-messenger-api</string>
+  <string>fbshareextension</string>
+  <string>fbauth2</string>
+  <string>fb-messenger-share-api</string>
+  <string>fbapi</string>
+</array>
+

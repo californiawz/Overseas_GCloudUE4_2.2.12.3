@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--LogicCore additions-->
+<root xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+  <!-- 初始化-->
+  <init>
+    <log text="MSDK-UPL init"/>
+    <setBoolFromProperty result="bGradle" ini="Engine" section="/Script/AndroidRuntimeSettings.AndroidRuntimeSettings" property="bEnableGradle" default="false"/>
+    <if condition="bGradle">
+            <true>
+                <log text="MSDK-UPL Use Gradle Build"/>
+            </true>
+      <false>
+        <log text="MSDK-UPL Use ANT Build"/>
+      </false>
+        </if>
+  </init>
+  <!--在ndk-build编译之前，从Intermediate/Android/APK中拷贝或删除文件-->
+  <prebuildCopies>
+    <copyDir src="$S(PluginDir)/lib/Android/msdk-core" dst="$S(BuildDir)/JavaLibs/msdk-core"/>
+    </prebuildCopies>
+
+  <!-- 拷贝文件或目录到Intermediate/Android/APK  -->
+  <resourceCopies>
+    <log text="MSDK-UPL Start copy start...$S(PluginDir)" />
+    <copyDir src="$S(PluginDir)/lib/Android/assets/" dst="$S(BuildDir)/assets"/>
+  </resourceCopies>
+
+  <buildscriptGradleAdditions>  
+  <insert>
+
+  </insert>
+  </buildscriptGradleAdditions>
+
+  <baseBuildGradleAdditions>
+  <insert>
+  <![CDATA[
+    ext {
+        androidSupportDependencies = [
+		v4 : "androidx.legacy:legacy-support-v4:1.0.0",
+		appCompat : "androidx.appcompat:appcompat:1.0.0",
+		design : "com.google.android.material:material:1.0.0-rc01",
+		customtabs : "androidx.customview:customview:1.1.0",
+		cardview : "androidx.cardview:cardview:1.0.0"
+]
+	presentationDependencies = [
+		recyclerView:"androidx.recyclerview:recyclerview:1.0.0"
+]
+	thirdChannel =[
+			firebaseAnalyticsVersion : '17.6.0',
+			firebaseMessageVersion : '20.3.0',
+			firebaseCrashVersion : '17.2.2',
+			//谷歌版本为 15.0.0， firebase 版本需要在 15.0.2 以上
+			googleAuthVersion : '20.2.0',
+			googleGamesVersion : '22.0.1',
+			lineVersion : '5.6.2'
+	]
+	channelDespendencies = [
+			firebaseAnalytics :"com.google.firebase:firebase-analytics:${thirdChannel.firebaseAnalyticsVersion}",
+			firebaseMessage : "com.google.firebase:firebase-messaging:${thirdChannel.firebaseMessageVersion}",
+			firebaseCrashly: "com.google.firebase:firebase-crashlytics:${thirdChannel.firebaseCrashVersion}",
+			googleAuth: "com.google.android.gms:play-services-auth:${thirdChannel.googleAuthVersion}",
+			googleGames: "com.google.android.gms:play-services-games:${thirdChannel.googleGamesVersion}",
+			lineSDK : "com.linecorp.linesdk:linesdk:${thirdChannel.lineVersion}"
+	]
+    }
+    ]]>
+  </insert>
+  </baseBuildGradleAdditions>
+
+  <buildGradleAdditions>
+    <insert>
+    <![CDATA[
+        configurations.all {
+            resolutionStrategy {
+            force rootProject.ext.channelDespendencies.googleAuth
+            force rootProject.ext.channelDespendencies.googleGames
+            force 'com.google.android.gms:play-services-nearby:16.0.0'
+            force 'com.google.android.gms:play-services-plus:16.0.0'
+          }
+        }
+      ]]>
+
+    </insert>
+  </buildGradleAdditions>
+
+  <androidManifestUpdates>
+    <log text="MSDK-UPL AndroidManifestUpdates finish" /> 
+  </androidManifestUpdates>
+
+  <!--在libUE4.so库加载之前需要加载的库,MSDK.so库用于接受java端的回调-->
+  <soLoadLibrary>
+  <log text="MSDK-UPL MSDK.so loaded after libUE4.so" /> 
+  </soLoadLibrary>
+
+
+<proguardAdditions>
+    <insert>
+      -keep class com.tdatamaster.** {*;}
+      -dontwarn okhttp3.*
+      -keep class com.tdatamaster.tdmbeacon.** { *; }
+      -keep class com.tdatamaster.tdm.** {*;}
+      -keep class com.gcore.gcloud.** {*;}
+      -keep class com.itop.gcloud.** {*;}
+      -keep public class com.uqm.crashsight.**{*;}
+      -ignorewarnings
+      -keep class com.itop.gcloud.** {*;}
+    </insert>
+  </proguardAdditions>
+
+</root>

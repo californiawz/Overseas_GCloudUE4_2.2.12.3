@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- init section is always evaluated once per architecture -->
+
+
+  <androidManifestUpdates>
+
+
+  </androidManifestUpdates>
+
+
+    <resourceCopies>
+        <!-- copy src -->
+        <copyDir src="$S(PluginDir)/../GPMSDKLib/Android/libs/" dst="$S(BuildDir)/libs/" />
+		<copyDir src="$S(PluginDir)/../GPMSDKLib/Android/assets/" dst="$S(BuildDir)/assets" />
+        <copyDir src="$S(PluginDir)/../GPMSDKLib/Android/libs/$S(Architecture)/" dst="$S(BuildDir)/libs/$S(Architecture)/" />
+    </resourceCopies>
+  
+
+  <gameActivityImportAdditions>
+    <insert>
+      import com.perfsight.gpm.portal.GPMAgent;
+            
+      //import android.util.Log;
+      import java.util.HashMap;
+      import java.util.Map;
+    </insert>
+  </gameActivityImportAdditions>
+
+  <gameActivityClassAdditions>
+    <insert>
+
+      public String AndroidThunkJava_getSDKVersion()
+      {
+        Log.error("gpm AndroidThunkJava_GetSDKVersion: ");
+        return GPMAgent.getInstance().getSDKVersion();
+      }
+
+      public int AndroidThunkJava_initContext(String appId, String engine, boolean debug,int disable)
+      {
+        Log.error("gpm AndroidThunkJava_InitContext: " + engine +""+ debug );
+        return GPMAgent.getInstance().initContext(this, appId, "unreal", debug, disable);
+      }
+
+      public void AndroidThunkJava_disableDomCDNDomain()
+      {
+        Log.debug("gpm AndroidThunkJava_disableDomCDNDomain");
+        GPMAgent.getInstance().disableDomCDNDomain();
+      }
+
+      public void AndroidThunkJava_syncServerTime(long time)
+      {
+        Log.debug("gpm AndroidThunkJava_syncServerTime: " + time);
+        GPMAgent.getInstance().syncServerTime(time);
+      }
+
+      public void AndroidThunkJava_setOpenId(String userID)
+      {
+        Log.debug("gpm AndroidThunkJava_SetOpenId: " + userID);
+        GPMAgent.getInstance().setOpenId(userID);
+      }
+
+      public void AndroidThunkJava_markLevelLoad(String sceneName)
+      {
+        Log.debug("gpm AndroidThunkJava_MarkLevelLoad: " + sceneName);
+        GPMAgent.getInstance().markLevelLoad(sceneName);
+      }
+
+      public void AndroidThunkJava_markLevelLoadCompleted( )
+      {
+        Log.debug("gpm AndroidThunkJava_markLevelLoadCompleted");
+        GPMAgent.getInstance().markLevelLoadCompleted();
+      }
+
+      public void AndroidThunkJava_markLevelFin()
+      {
+        Log.debug("gpm AndroidThunkJava_MarkLevelFin ");
+        GPMAgent.getInstance().markLevelFin();
+      }
+
+      public void AndroidThunkJava_saveGpuInfo(String gpu_model)
+      {
+        Log.debug("gpm AndroidThunkJava_SaveGpuInfo: " + gpu_model);
+        GPMAgent.getInstance().saveGpuInfo(gpu_model);
+      }
+
+      public void AndroidThunkJava_beginExtTag(String tagName)
+      {
+      Log.debug("gpm AndroidThunkJava_BeginExtTag: " + tagName);
+      GPMAgent.getInstance().beginExtTag(tagName);
+      }
+
+      public void AndroidThunkJava_endExtTag(String tagName)
+      {
+      Log.debug("gpm AndroidThunkJava_EndExtTag: " + tagName);
+      GPMAgent.getInstance().endExtTag(tagName);
+      }
+
+      public void AndroidThunkJava_beginTag(String tagName)
+      {
+        Log.debug("gpm AndroidThunkJava_BeginTag: " + tagName);
+        GPMAgent.getInstance().beginTag(tagName);
+      }
+
+      public void AndroidThunkJava_endTag()
+      {
+        Log.debug("gpm AndroidThunkJava_EndTag: ");
+        GPMAgent.getInstance().endTag();
+      }
+
+      public int AndroidThunkJava_getDeviceLevelSyncFromServerByQcc(String configName, String gpuRender)
+      {
+        Log.debug("gpm AndroidThunkJava_getDeviceLevelSyncFromServerByQcc " + configName + " " + gpuRender);
+        return  GPMAgent.getInstance().checkDCLSByQccSync(configName, gpuRender, gpuRender);
+      }
+
+      public int AndroidThunkJava_getDeviceLevelByString(String configName, String gpuRender, String json)
+      {
+      Log.debug("gpm AndroidThunkJava_getDeviceLevelByString " + configName + " " + gpuRender);
+      return  GPMAgent.getInstance().checkDCLSByString(configName, gpuRender, gpuRender,json);
+      }
+
+      public int AndroidThunkJava_getDeviceLevelByQcc(String configName, String gpuRender)
+      {
+        Log.debug("gpm AndroidThunkJava_GetDeviceLevelByQcc " + configName + " " + gpuRender);
+        return  GPMAgent.getInstance().checkDCLSByQcc(configName, gpuRender, gpuRender);
+      }
+
+	    public void AndroidThunkJava_setEngineMetaInfo(int engine, String engineVersion, int grapohicsApi,
+      String vendor, String render, String version,
+      int gragraphicsMemSize, int graphicsMT, int supportRendertargetCount,
+      int isOpenGLES)
+      {
+          Log.debug("gpm AndroidThunkJava_setEngineMetaInfo ");
+          GPMAgent.getInstance().setEngineMetaInfo(engine, engineVersion, grapohicsApi, vendor, render, version,
+                  gragraphicsMemSize, graphicsMT, supportRendertargetCount,isOpenGLES);
+      }
+
+
+      public void AndroidThunkJava_setQuality(int quality)
+      {
+        Log.debug("gpm AndroidThunkJava_SetQuality" + quality);
+        GPMAgent.getInstance().setQulaity(quality);
+      }
+
+      public void AndroidThunkJava_postMarkEvent(int key, String value){
+        Log.debug("gpm AndroidThunkJava_PostMarkEvent" + key + " " + value);
+        GPMAgent.getInstance().postEvent(key, value);
+      }
+
+      public void AndroidThunkJava_postEventIS(int key, String info)
+      {
+        Log.debug("gpm AndroidThunkJava_PostEventIS" + key + " " + info);
+        GPMAgent.getInstance().postEvent(key, info);
+      }
+
+      public void AndroidThunkJava_setVersionIden(String versionName)
+      {
+        Log.debug("gpm AndroidThunkJava_setVersionIden" + versionName);
+        GPMAgent.getInstance().setVersionIden(versionName);
+      }
+
+      public void AndroidThunkJava_postCoordinates(float x, float y, float z, float pitch, float yaw, float roll)
+      {
+      Log.debug("gpm AndroidThunkJava_PostCoordinates" + x + " " + y  + " " + z + " " + pitch + " " + yaw + " " + roll) ;
+      GPMAgent.getInstance().postCoordinates(x, y, z, pitch, yaw, roll);
+      }
+
+      public void AndroidThunkJava_beginExclude() {
+        GPMAgent.getInstance().beignExclude();
+      }
+
+      public void AndroidThunkJava_endExclude() {
+        GPMAgent.getInstance().endExclude();
+      }
+
+      public void AndroidThunkJava_initStepEventContext() {
+        //GPMAgent.getInstance().initStepEventContext();
+      }
+
+
+	  public void AndroidThunkJava_linkLastStepCategorySession(String category) {
+      GPMAgent.getInstance().linkStepEventSession(category);
+      }
+     
+      public void AndroidThunkJava_postStepEvent(String eventCategory, int stepId, int status, int code, String msg, String extraKey,boolean finish, boolean authorize) {
+      GPMAgent.getInstance().postStepEvent(eventCategory, stepId, status, code, msg, extraKey, finish, authorize);
+      }
+	  
+      public void AndroidThunkJava_releaseStepEventContext() {
+      //GPMAgent.getInstance().releaseStepEventContext();
+      }
+
+      public void AndroidThunkJava_setDeviceLevel(int level) {
+       GPMAgent.getInstance().setDefinedDeviceClass(level);
+      }
+
+      public void AndroidThunkJava_setTargetFramerate(int target) {
+      GPMAgent.getInstance().setTargetFramerate(target);
+      }
+
+      public String AndroidThunkJava_getErrorMsg(int code) {
+        return GPMAgent.getInstance().getErrorMsg(code);
+      }
+
+
+      public void AndroidThunkJava_setServerInfo(String zoneId, String roomIp){
+          GPMAgent.getInstance().setServerInfo(zoneId, roomIp);
+      }
+
+      public void AndroidThunkJava_detectInTimeout(){
+        GPMAgent.getInstance().detectInTimeout();
+      }
+
+      public Map&lt;String, String&gt; AndroidThunkJava_createMap(int initialCapacity) {
+      return new HashMap&lt;&gt;(initialCapacity);
+      }
+
+      public void AndroidThunkJava_postEvent(String eventName, Map&lt;String, String&gt; eventParams){
+      GPMAgent.getInstance().postEvent(eventName, eventParams);
+      }
+
+      public void AndroidThunkJava_AddCustomParamsInGame(Map&lt;String, String&gt; eventParams){
+      GPMAgent.getInstance().addCustomParamsInGame(eventParams);
+      }
+
+      public void AndroidThunkJava_AddCustomParamsInStepEvent(String eventCategory, Map&lt;String, String&gt; eventParams){
+      GPMAgent.getInstance().addCustomParamsInStepEvent(eventCategory, eventParams);
+      }
+      public void AndroidThunkJava_markStarUpFinish( )
+      {
+      Log.debug("gpm AndroidThunkJava_markStarUpFinish");
+      GPMAgent.startUpFinish();
+      }
+
+      public int AndroidThunkJava_getDiskStorageAvailableSizeInKiB()
+      {
+      return GPMAgent.getInstance().getDiskStorageAvailableSizeInKiB();
+      }
+
+      public int AndroidThunkJava_getApmInfo(int type,boolean useAPMCache)
+      {
+      return GPMAgent.getInstance().getApmInfo(type,useAPMCache);
+      }
+
+      public String AndroidThunkJava_getSDKDefinedDeviceID()
+      {
+      return GPMAgent.getInstance().getSDKDefinedDeviceID();
+      }
+    </insert>
+  </gameActivityClassAdditions>
+
+
+  <androidManifestUpdates>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  </androidManifestUpdates>
+
+  <proguardAdditions>
+    <insert>
+
+			
+		-keep public class com.perfsight.gpm.portal.GPMAgent { *; }
+        -keep public class com.perfsight.gpm.jni.GPMNativeHelper { *; }
+	    -keep public class com.perfsight.gpm.cloudcontrol.APMCCStrategy { *; }
+		-keep public class com.perfsight.gpm.template.CCStrategyTemplate { *; }
+        -keep public class com.perfsight.gpm.apm.EngineMetaInfoHandler$GpuInfo { *; }
+			
+          # vendor sdk
+        -dontwarn com.samsung.android.game.**
+        -keep class com.samsung.android.game.** { *; }
+
+        -dontwarn com.vivo.vivogamesdk.**
+        -keep class com.vivo.vivogamesdk.** { *; }
+
+        -dontwarn com.huawei.game.gamekit.**
+        -keep class com.huawei.game.gamekit.** { *; }
+        -dontwarn android.rms.iaware.**
+        -keep class android.rms.iaware.** { *; }
+        -dontwarn com.huawei.devices.**
+        -keep class com.huawei.devices.** { *; }
+        -dontwarn com.huawei.android.os.**
+        -keep class com.huawei.android.os.** { *; }
+
+        -dontwarn com.oppo.oiface.**
+        -keep class com.oppo.oiface.** { *; }
+        -dontwarn com.oplus.cosa.**
+        -keep class com.oplus.cosa.** { *; }
+
+        -dontwarn com.xiaomi.boostersdk.**
+        -keep class com.xiaomi.boostersdk.** { *; }
+
+        # transceivertool
+        -keep class com.enq.transceiver.** { *;}
+        -keep class com.ihoc.tgpatask.** { *;}
+
+        # tgpa sdk
+        -keep class com.ihoc.mgpa.** { *; }
+        </insert>
+  </proguardAdditions>
+  
+    <androidManifestUpdates>
+        <!-- rich haptic -->
+        <uses-permission android:name="android.permission.VIBRATE" />
+        <!-- 后台下载 -->
+        <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    </androidManifestUpdates>
+
+</root>

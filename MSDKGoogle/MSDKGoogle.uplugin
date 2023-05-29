@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "MSDKGoogle",
+	"Description": "MSDK Google",
+	"Category": "MSDK",
+	"CreatedBy": "MSDK",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "MSDKGoogle",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"BlacklistPlatforms":
+            [
+                "Linux"
+            ]
+		}
+	]
+}

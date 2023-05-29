@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* Bu e-posta adresi kayıtlı, lütfen farklı bir e-posta adresi kullan.</string>
+    <string name="msdk_bind_and">%1$s ve %2$s</string>
+    <string name="msdk_bind_button_confirm">ONAYLA</string>
+    <string name="msdk_bind_button_next">İLERLE</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* Lütfen geçerli bir doğrulama kodu gir.</string>
+    <string name="msdk_bind_enter_verification_code">Doğrulama kodunu gir</string>
+    <string name="msdk_bind_enter_your_email">E-posta adresini gir</string>
+    <string name="msdk_bind_not_get_verification_code">Kod gelmedi mi? </string>
+    <string name="msdk_bind_please_enter_valid_email">* Lütfen geçerli bir e-posta adresi gir.</string>
+    <string name="msdk_bind_privacy_policy">Gizlilik Politikası</string>
+    <string name="msdk_bind_receive_email_notice">Duyuru ve güncellemeleri al.</string>
+    <string name="msdk_bind_resend">Tekrar gönder</string>
+    <string name="msdk_bind_terms_of_service">Kullanım Şartları</string>
+    <string name="msdk_bind_verification_sent_notification">%1$s adresine bir doğrulama kodu gönderildi.</string>
+    <string name="msdk_bind_you_are_all_set">Artık hazırsın!</string>
+</resources>

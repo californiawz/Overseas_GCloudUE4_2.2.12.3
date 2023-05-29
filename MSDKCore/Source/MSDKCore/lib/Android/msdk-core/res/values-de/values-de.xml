@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* Diese E-Mail-Adresse wurde bereits angemeldet. Bitte gib eine andere Adresse an.</string>
+    <string name="msdk_bind_and">%1$s und %2$s</string>
+    <string name="msdk_bind_button_confirm">BESTÄTIGEN</string>
+    <string name="msdk_bind_button_next">WEITER</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* Bitte gib einen gültigen Code ein.</string>
+    <string name="msdk_bind_enter_verification_code">Code zur Verifizierung eingeben</string>
+    <string name="msdk_bind_enter_your_email">Bitte gib deine E-Mail-Adresse an</string>
+    <string name="msdk_bind_not_get_verification_code">Keinen Code erhalten?</string>
+    <string name="msdk_bind_please_enter_valid_email">* Bitte gib eine gültige E-Mail-Adresse ein.</string>
+    <string name="msdk_bind_privacy_policy">Datenschutzerklärung</string>
+    <string name="msdk_bind_receive_email_notice">Erhalte News und Updates</string>
+    <string name="msdk_bind_resend">Neu senden</string>
+    <string name="msdk_bind_terms_of_service">Nutzungsbedingungen</string>
+    <string name="msdk_bind_verification_sent_notification">Ein Code zur Verifizierung wurde an deine Adresse %1$s gesendet.</string>
+    <string name="msdk_bind_you_are_all_set">Alles klar!</string>
+</resources>

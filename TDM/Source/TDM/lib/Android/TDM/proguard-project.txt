@@ -1,0 +1,2 @@
+-keep class com.tdatamaster.** {*;}
+-dontwarn okhttp3.*

@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.GVoice.cpp.obj": [
+			"GVoice.cpp.obj",
+			"GVoiceAppDelegate.cpp.obj"
+		]
+	}
+}

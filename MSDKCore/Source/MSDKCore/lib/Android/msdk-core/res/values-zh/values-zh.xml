@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* 此邮箱已注册，请使用另一个邮箱</string>
+    <string name="msdk_bind_and">%1$s和%2$s</string>
+    <string name="msdk_bind_button_confirm">确认</string>
+    <string name="msdk_bind_button_next">下一步</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* 请输入有效的验证码</string>
+    <string name="msdk_bind_enter_verification_code">请输入验证码</string>
+    <string name="msdk_bind_enter_your_email">请输入您的电子邮件</string>
+    <string name="msdk_bind_not_get_verification_code">没有收到验证码?</string>
+    <string name="msdk_bind_please_enter_valid_email">* 请输入一个有效的电子邮件地址</string>
+    <string name="msdk_bind_privacy_policy">隐私政策</string>
+    <string name="msdk_bind_receive_email_notice">接收消息和更新</string>
+    <string name="msdk_bind_resend">重新发送</string>
+    <string name="msdk_bind_terms_of_service">服务条款</string>
+    <string name="msdk_bind_verification_sent_notification">验证码已经发送到您的邮箱 %1$s</string>
+    <string name="msdk_bind_you_are_all_set">全部完成</string>
+</resources>

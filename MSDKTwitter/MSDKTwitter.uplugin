@@ -1,0 +1,27 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "MSDKTwitter",
+	"Description": "MSDK Twitter",
+	"Category": "MSDK",
+	"CreatedBy": "MSDK",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "MSDKTwitter",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"BlacklistPlatforms":
+            [
+                "Linux"
+            ]
+		}
+	]
+}

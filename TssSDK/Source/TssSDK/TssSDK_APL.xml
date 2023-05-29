@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--LogicCore additions-->
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- 初始化-->
+  <init>
+    <log text="TssSDK init"/>
+  </init>
+
+  <proguardAdditions>
+    <insert>
+-keep class com.gamesafe.ano.** { *; }
+-keep class com.gamesafe.ano.a.** { *; }
+-keep class com.gamesafe.ano.b.** { *; }
+-keep class com.gamesafe.ano.c.** { *; }
+-dontwarn com.gamesafe.ano.**
+-ignorewarnings
+    </insert>
+  </proguardAdditions>
+
+  <!--在ndk-build编译之前，从Intermediate/Android/APK中拷贝或删除文件-->
+  <prebuildCopies>
+    <log text="Tss Copy prebuildCopies Begin."/>
+	  <!--copyFile src="$S(PluginDir)/../TssSDKLib/Android/TssSDK/libs/ano.jar"
+              dst="$S(BuildDir)/libs/ano.jar" /-->
+    
+    <copyDir src="$S(PluginDir)/../TssSDKLib/Android" dst="$S(BuildDir)/JavaLibs/TssSDK"/>
+  </prebuildCopies>
+
+  <!-- optional updates applied to AndroidManifest.xml -->
+  <androidManifestUpdates>
+    <log text="androidManifestUpdates begin" />
+    <addElements tag="application">
+
+    </addElements>
+
+    <addPermission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <addPermission android:name="android.permission.INTERNET"/>
+
+  </androidManifestUpdates>
+
+	<!--拷贝文件或目录到Intermediate/Android/APK -->
+	<resourceCopies>
+    <copyDir src="$S(PluginDir)/../TssSDKLib/Android/libs/" dst="$S(BuildDir)/libs/"/>
+    <copyDir src="$S(PluginDir)/../TssSDKLib/Android/libs/$S(Architecture)/" dst="$S(BuildDir)/libs/$S(Architecture)/" />
+  </resourceCopies>
+
+  <!--在libUE4.so库加载之前需要加载的库-->
+  <soLoadLibrary>
+    <!--loadLibrary name="anogs" failmsg="Tss anogs library not loaded and required!"/-->
+  </soLoadLibrary>
+
+  <gameActivityImportAdditions>
+    <insert>
+    </insert>
+  </gameActivityImportAdditions>
+
+  <!--GameActivity.java导完类之后要做的事情 -->
+  <gameActivityPostImportAdditions>
+  </gameActivityPostImportAdditions>
+
+  <gameActivityClassAdditions>
+  </gameActivityClassAdditions>
+
+  <gameActivityOnCreateAdditions>
+
+  </gameActivityOnCreateAdditions>
+</root>

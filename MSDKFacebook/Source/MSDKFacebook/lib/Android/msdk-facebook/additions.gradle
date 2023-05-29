@@ -1,0 +1,21 @@
+android{
+    sourceSets{
+        main {
+            jniLibs.srcDirs 'libs'
+            res.srcDirs 'res'
+            assets.srcDirs 'assets'
+        }
+    }
+    if(gradle.gradleVersion.startsWith("5")){ packageBuildConfig false } else { buildFeatures { buildConfig = false } }//edit by script
+    packagingOptions {
+        exclude '**/BuildConfig.class'
+    }
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile "com.facebook.android:facebook-login:12.2.0"
+	compile "com.facebook.android:facebook-share:12.2.0"
+	compile "com.facebook.android:facebook-core:12.2.0"
+	compile "com.facebook.android:facebook-gamingservices:12.2.0"
+}

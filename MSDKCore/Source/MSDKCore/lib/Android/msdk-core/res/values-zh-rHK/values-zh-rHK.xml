@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* 此電郵地址已被註冊，請使用其他電郵地址。</string>
+    <string name="msdk_bind_and">%1$s與%2$s</string>
+    <string name="msdk_bind_button_confirm">確定</string>
+    <string name="msdk_bind_button_next">下一步</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* 請輸入有效的驗證碼。</string>
+    <string name="msdk_bind_enter_verification_code">請輸入驗證碼</string>
+    <string name="msdk_bind_enter_your_email">請輸入你的電郵地址</string>
+    <string name="msdk_bind_not_get_verification_code">沒有收到驗證碼？</string>
+    <string name="msdk_bind_please_enter_valid_email">* 請輸入有效的電郵地址。</string>
+    <string name="msdk_bind_privacy_policy">私隱政策</string>
+    <string name="msdk_bind_receive_email_notice">接收新聞和更新</string>
+    <string name="msdk_bind_resend">重新傳送</string>
+    <string name="msdk_bind_terms_of_service">服務條款</string>
+    <string name="msdk_bind_verification_sent_notification">驗證碼已傳送至您的電子郵件 %1$s</string>
+    <string name="msdk_bind_you_are_all_set">完成了！</string>
+</resources>

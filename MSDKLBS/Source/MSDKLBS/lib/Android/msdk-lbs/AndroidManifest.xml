@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itop.gcloud.msdk.lbs"
+    android:versionCode="6677"
+    android:versionName="5.29.000" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="31" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application>
+        <activity
+            android:name="com.itop.gcloud.msdk.lbs.PermissionActivity"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+    </application>
+
+</manifest>

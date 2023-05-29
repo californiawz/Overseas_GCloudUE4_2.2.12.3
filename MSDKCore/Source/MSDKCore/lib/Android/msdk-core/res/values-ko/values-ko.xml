@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* 해당 이메일 주소는 이미 등록되어있습니다. 다른 이메일 주소를 사용하십시오.</string>
+    <string name="msdk_bind_and">%1$s 및 %2$s。</string>
+    <string name="msdk_bind_button_confirm">확인</string>
+    <string name="msdk_bind_button_next">다음</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* 유효한 인증 코드를 입력하십시오.</string>
+    <string name="msdk_bind_enter_verification_code">인증 코드를 입력하십시오</string>
+    <string name="msdk_bind_enter_your_email">이메일을 입력하십시오</string>
+    <string name="msdk_bind_not_get_verification_code">인증 코드를 받지 못하셨나요 ? </string>
+    <string name="msdk_bind_please_enter_valid_email">* 유효한 이메일 주소를 입력하세요.</string>
+    <string name="msdk_bind_privacy_policy">개인 정보 보호 정책</string>
+    <string name="msdk_bind_receive_email_notice">뉴스 및 업데이트 수신.</string>
+    <string name="msdk_bind_resend">재전송</string>
+    <string name="msdk_bind_terms_of_service">서비스 약관 </string>
+    <string name="msdk_bind_verification_sent_notification">인증 코드가 귀하의 이메일 %1$s 으로 전송되었습니다.</string>
+    <string name="msdk_bind_you_are_all_set">모든 설정이 완료되었습니다!</string>
+</resources>

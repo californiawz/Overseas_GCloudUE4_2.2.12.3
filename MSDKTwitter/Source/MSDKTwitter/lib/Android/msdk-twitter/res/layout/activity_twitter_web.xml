@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/twitter_action_container"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/twitter_btn_back"
+            style="@style/twitter_action_button"
+            android:src="@drawable/com_itop_twitterweb_bg_back"
+            android:scaleType="centerInside"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/twitter_tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/twitter_action_title"
+            style="@style/twitter_action_title"/>
+
+        <ImageButton
+            android:id="@+id/twitter_btn_close"
+            style="@style/twitter_action_button"
+            android:src="@drawable/com_itop_twitterweb_bg_close"
+            android:scaleType="centerInside"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/twitter_line"/>
+
+    <ProgressBar
+        android:id="@+id/twitter_bar_progress"
+        style="@style/twitter_progress_bar"
+        android:visibility="visible"
+        />
+    <WebView
+        android:id="@+id/twitter_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

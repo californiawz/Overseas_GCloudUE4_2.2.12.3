@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itop.gcloud.msdk.google"
+    android:versionCode="7206"
+    android:versionName="5.30.001" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="31" />
+
+    <application>
+        <meta-data
+            android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+    </application>
+
+</manifest>

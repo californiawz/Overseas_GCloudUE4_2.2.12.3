@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* อีเมลนี้ได้ทำการลงทะเบียนแล้ว กรุณาลองใช้อีเมลอื่น</string>
+    <string name="msdk_bind_and">%1$s และน %2$s</string>
+    <string name="msdk_bind_button_confirm">ยืนยัน</string>
+    <string name="msdk_bind_button_next">ต่อไป</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* กรุณาใส่รหัสยืนยันที่ยังมีผลอยู่</string>
+    <string name="msdk_bind_enter_verification_code">ใส่รหัสยืนยัน</string>
+    <string name="msdk_bind_enter_your_email">ใส่อีเมลของคุณ</string>
+    <string name="msdk_bind_not_get_verification_code">ยังไม่ได้รับรหัสใช่หรือไม่? </string>
+    <string name="msdk_bind_please_enter_valid_email">* กรุณากรอกอีเมลให้ถูกต้อง</string>
+    <string name="msdk_bind_privacy_policy">นโยบายความเป็นส่วนตัว</string>
+    <string name="msdk_bind_receive_email_notice">รับข่าวสารและการอัปเดต</string>
+    <string name="msdk_bind_resend">ส่งอีกครั้ง</string>
+    <string name="msdk_bind_terms_of_service">เงื่อนไขการให้บริการ</string>
+    <string name="msdk_bind_verification_sent_notification">รหัสยืนยันได้ถูกส่งไปยังอีเมล %1$s ของคุณแล้ว</string>
+    <string name="msdk_bind_you_are_all_set">ลงทะเบียนสำเร็จ!</string>
+</resources>

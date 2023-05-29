@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* Địa chỉ email này đã được đăng ký, hãy sử dụng email khác.</string>
+    <string name="msdk_bind_and">%1$s và %2$s</string>
+    <string name="msdk_bind_button_confirm">KONFIRMASI</string>
+    <string name="msdk_bind_button_next">TIẾP</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* Harap masukkan kode verifikasi yang valid.</string>
+    <string name="msdk_bind_enter_verification_code">Nhập mã xác thực</string>
+    <string name="msdk_bind_enter_your_email">Nhập Email</string>
+    <string name="msdk_bind_not_get_verification_code">Không nhận được mã?</string>
+    <string name="msdk_bind_please_enter_valid_email">* Vui lòng nhập địa chỉ email hợp lệ.</string>
+    <string name="msdk_bind_privacy_policy">Chính Sách Bảo Mật</string>
+    <string name="msdk_bind_receive_email_notice">Terima berita dan update terbaru</string>
+    <string name="msdk_bind_resend">Gửi lại</string>
+    <string name="msdk_bind_terms_of_service">Điều Khoản Dịch Vụ</string>
+    <string name="msdk_bind_verification_sent_notification">Mã xác thực đã được gừi đến email %1$s của bạn</string>
+    <string name="msdk_bind_you_are_all_set">Berhasil!</string>
+</resources>

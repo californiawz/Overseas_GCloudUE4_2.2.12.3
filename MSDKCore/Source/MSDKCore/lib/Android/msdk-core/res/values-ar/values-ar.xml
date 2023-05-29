@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">*  تم التسجيل باستخدام عنوان البريد الإلكتروني هذا بالفعل، يُرجى استخدام واحد آخر.</string>
+    <string name="msdk_bind_and">\u200F%1$s و \u200F%2$s</string>
+    <string name="msdk_bind_button_confirm">تأكيد</string>
+    <string name="msdk_bind_button_next">التالي</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">*  يُرجى إدخال رمز تحقق صالح.</string>
+    <string name="msdk_bind_enter_verification_code"> أدخِل رمز التحقق</string>
+    <string name="msdk_bind_enter_your_email">أدخِل بريدك الإلكتروني</string>
+    <string name="msdk_bind_not_get_verification_code">ألم تستلم الرمز؟ </string>
+    <string name="msdk_bind_please_enter_valid_email">* يُرجى إدخال عنوان بريد إلكتروني صالح.</string>
+    <string name="msdk_bind_privacy_policy">سياسة الخصوصية</string>
+    <string name="msdk_bind_receive_email_notice"> تلقِّي الأخبار والتحديثات</string>
+    <string name="msdk_bind_resend">إعادة إرسال</string>
+    <string name="msdk_bind_terms_of_service"> شروط الخدمة</string>
+    <string name="msdk_bind_verification_sent_notification">سوف يتم إرسال رمز تحقق إلى بريدك الإلكتروني %1$s </string>
+    <string name="msdk_bind_you_are_all_set"> أنت جاهز للبدء!</string>
+</resources>

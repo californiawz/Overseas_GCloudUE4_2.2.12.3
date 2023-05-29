@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itop.gcloud.msdk.core"
+    android:versionCode="7208"
+    android:versionName="5.30.002" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="31" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity
+            android:name="com.itop.gcloud.msdk.core.policy.MSDKPolicyActivity"
+            android:exported="true" >
+
+            <!-- 用于标记协议版本，如果协议有更新，则往上累加，请填写整数值 -->
+            <meta-data
+                android:name="MSDK_POLICY_VERSION"
+                android:value="1" />
+        </activity>
+    </application>
+
+</manifest>

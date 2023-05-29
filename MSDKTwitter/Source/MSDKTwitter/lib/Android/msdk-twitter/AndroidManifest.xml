@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itop.gcloud.msdk.twitter"
+    android:versionCode="7206"
+    android:versionName="5.30.001" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="31" />
+
+    <application>
+        <provider
+            android:name="com.itop.gcloud.msdk.twitter.TwitterFileProvider"
+            android:authorities="com.sixjoy.letsgo.twitter.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/twitter_share_storage" />
+        </provider>
+
+        <!-- TwitterWeb 需要 -->
+        <activity
+            android:name="com.itop.twitterwrapper.TwitterWebActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/TwitterTheme" />
+    </application>
+
+</manifest>

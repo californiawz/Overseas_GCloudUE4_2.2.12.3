@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msdk_bind_account_exists">* このメールアドレスは既に登録されています。他のメールアドレスを入力してください。</string>
+    <string name="msdk_bind_and">%1$s と %2$s。</string>
+    <string name="msdk_bind_button_confirm">確認</string>
+    <string name="msdk_bind_button_next">次へ</string>
+    <string name="msdk_bind_email_hint">Gameplayer@gmail.com</string>
+    <string name="msdk_bind_enter_valid_verification_code">* 正しい確認コードを入力してください。</string>
+    <string name="msdk_bind_enter_verification_code">確認コードを入力してください</string>
+    <string name="msdk_bind_enter_your_email">メールアドレスを入力してください</string>
+    <string name="msdk_bind_not_get_verification_code">確認コードが受け取れない　</string>
+    <string name="msdk_bind_please_enter_valid_email">* 正しいメールアドレスを入力してください。</string>
+    <string name="msdk_bind_privacy_policy">プライバシーポリシー</string>
+    <string name="msdk_bind_receive_email_notice">ニュース・アップデート情報を受け取る。</string>
+    <string name="msdk_bind_resend">再送信</string>
+    <string name="msdk_bind_terms_of_service">利用規約</string>
+    <string name="msdk_bind_verification_sent_notification">確認コードを下記メールアドレス宛に送信しました。%1$s</string>
+    <string name="msdk_bind_you_are_all_set">全ての操作が完了しました。\nご協力ありがとうございました。</string>
+</resources>

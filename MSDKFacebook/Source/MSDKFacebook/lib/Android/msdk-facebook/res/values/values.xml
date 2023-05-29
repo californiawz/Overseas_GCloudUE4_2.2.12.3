@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="msdk_facebook_progressbar_bg">#EFEFEF</color>
+    <color name="msdk_facebook_progressbar_gradient_end">#ADD9F3</color>
+    <color name="msdk_facebook_progressbar_gradient_start">#ADD9F3</color>
+    <string name="app_name">facebook</string>
+</resources>
