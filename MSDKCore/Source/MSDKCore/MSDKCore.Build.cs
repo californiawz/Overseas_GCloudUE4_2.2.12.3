@@ -76,17 +76,17 @@ public class MSDKCore : ModuleRules
 		try {
 				if (File.Exists(pthreadHeaderPath)) {
 					System.Console.WriteLine("Delete pthread.h");
-					//File.Delete(pthreadHeaderPath);
+					File.Delete(pthreadHeaderPath);
 				}
 				
 				if (File.Exists(schedHeaderPath)) {
 					System.Console.WriteLine("Delete sched.h");
-					//File.Delete(schedHeaderPath);
+					File.Delete(schedHeaderPath);
 				}
 				
 				if (File.Exists(semaphoreHeaderPath)) {
 					System.Console.WriteLine("Delete semaphore.h");
-					//File.Delete(semaphoreHeaderPath);
+					File.Delete(semaphoreHeaderPath);
 				}
 			} catch (IOException e) {
 				System.Console.WriteLine("Delete pthread or sched or semaphore exception, err=", e.ToString());
