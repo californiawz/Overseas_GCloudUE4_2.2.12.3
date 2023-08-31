@@ -1,9 +1,0 @@
-{
-	"RemapUnityFiles": 
-	{
-		"Module.GCloudCore.cpp.obj": [
-			"GCloudCoreAppDelegate.cpp.obj",
-			"GCloudCoreModule.cpp.obj"
-		]
-	}
-}
